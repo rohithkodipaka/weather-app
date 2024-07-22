@@ -4,9 +4,10 @@ import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
 import './InfoBox.css'
+import image from '/misty.jpg';
+
 
 export default function InfoBox({weatherInfo}) {
-    const IMAGE_URL = 'public/misty.jpg';
     let info = {
         city: weatherInfo.city,
         feelsLike: weatherInfo.feelsLike,
@@ -25,7 +26,7 @@ export default function InfoBox({weatherInfo}) {
                     <CardMedia
                         component="img"
                         height="200"
-                        image={IMAGE_URL}
+                        image={image}
                         alt="Misty Image"
                     />
                     <CardContent>
